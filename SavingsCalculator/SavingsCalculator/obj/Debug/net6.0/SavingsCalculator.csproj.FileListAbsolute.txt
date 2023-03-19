@@ -1,0 +1,15 @@
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\bin\Debug\net6.0\SavingsCalculator.exe
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\bin\Debug\net6.0\SavingsCalculator.deps.json
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\bin\Debug\net6.0\SavingsCalculator.runtimeconfig.json
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\bin\Debug\net6.0\SavingsCalculator.dll
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\bin\Debug\net6.0\SavingsCalculator.pdb
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.csproj.AssemblyReference.cache
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.AssemblyInfoInputs.cache
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.AssemblyInfo.cs
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.csproj.CoreCompileInputs.cache
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.dll
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\refint\SavingsCalculator.dll
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.pdb
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\SavingsCalculator.genruntimeconfig.cache
+D:\work\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\net6.0\ref\SavingsCalculator.dll
