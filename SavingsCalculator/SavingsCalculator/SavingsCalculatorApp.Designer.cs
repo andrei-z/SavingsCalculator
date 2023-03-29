@@ -244,9 +244,9 @@
             label11.AutoSize = true;
             label11.Location = new Point(5, 5);
             label11.Name = "label11";
-            label11.Size = new Size(95, 15);
+            label11.Size = new Size(118, 15);
             label11.TabIndex = 12;
-            label11.Text = "Tipul depozitului";
+            label11.Text = "Termenul depozitului";
             // 
             // checkedListBoxDepositPeriod
             // 
