@@ -34,21 +34,21 @@ namespace SavingsCalculator
                 interestValue = (totalSavings * (interestRate / 100)) / 12;
                 totalSavings += interestValue;
 
-                textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"Valoare economii daca nu ai fi investit: {eachMonthSavings * i}{Environment.NewLine}")));
+                textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"Valoare economii fara investitii: {eachMonthSavings * i}{Environment.NewLine}")));
                 textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"Valoare dobanda lunara: {string.Format("{0:0.00}", interestValue)}{Environment.NewLine}")));
                 textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"Total economii: {string.Format("{0:0.00}", totalSavings)}{Environment.NewLine}")));
                 textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"Valoare profit: {string.Format("{0:0.00}", totalSavings - (eachMonthSavings * i))}{Environment.NewLine}")));
-
                 textBoxDetailedStatusTab1.Invoke((MethodInvoker)(() => textBoxDetailedStatusTab1.AppendText($"{Environment.NewLine}")));
 
                 totalSavings += eachMonthSavings;
             }
 
-            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Valoare economii daca nu ai fi investit: {eachMonthSavings * totalInvestmentPeriodMonths}{Environment.NewLine}")));
+            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Valoare economii fara investitii: {eachMonthSavings * totalInvestmentPeriodMonths}{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Total economii: {string.Format("{0:0.00}", totalSavings)}{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Profit total: {string.Format("{0:0.00}", totalSavings - (eachMonthSavings * totalInvestmentPeriodMonths))}{Environment.NewLine}")));
+            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Rata profit total: {string.Format("{0:0.00}", ((totalSavings - (eachMonthSavings * totalInvestmentPeriodMonths)) * 100) / (eachMonthSavings * totalInvestmentPeriodMonths))}{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"{Environment.NewLine}")));
-            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Aceste calcule au fost generate pentru:{Environment.NewLine}")));
+            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Calculele au fost generate pentru:{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Perioada investitiei: {totalInvestmentPeriodMonths} luni{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Valarea investitiei lunare: {eachMonthSavings}{Environment.NewLine}")));
             textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Rata de profit anual: {interestRate}%{Environment.NewLine}")));
@@ -148,7 +148,8 @@ namespace SavingsCalculator
                         break;
                     }
             }
-            textBoxSummaryStatusTab2.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab2.AppendText($"{Environment.NewLine}"))); textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Aceste calcule au fost generate pentru:{Environment.NewLine}")));
+            textBoxSummaryStatusTab2.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab2.AppendText($"{Environment.NewLine}"))); 
+            textBoxSummaryStatusTab1.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab1.AppendText($"Calculele fost generate pentru:{Environment.NewLine}")));
             textBoxSummaryStatusTab2.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab2.AppendText($"Perioada depozitului: {totalDepositPeriodYears} ani{Environment.NewLine}")));
             textBoxSummaryStatusTab2.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab2.AppendText($"Termenul depozitului: {depositPeriod}{Environment.NewLine}")));
             textBoxSummaryStatusTab2.Invoke((MethodInvoker)(() => textBoxSummaryStatusTab2.AppendText($"Rata dobanda anuala: {interestRate}%{Environment.NewLine}")));
